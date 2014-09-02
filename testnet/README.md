@@ -15,7 +15,7 @@
 
 ## Run Process
 
-    counterpartyd --testnet --backend-rpc-connect=$DOGECOIND_PORT_44555_TCP_ADDR --backend-rpc-port=$DOGECOIND_PORT_44555_TCP_PORT --blockchain-service-connect=$(echo $INSIGHT_PORT_3001_TCP|sed -e "s/tcp/http/") --verbose server
+    counterpartyd --testnet --backend-rpc-connect=dogecoind --backend-rpc-port=44555 --blockchain-service-connect=http://insight:3001 --verbose server
 
 
 ## Debug

@@ -22,7 +22,7 @@ See the global picture how this container interacts with other components to run
 
 ## Run Process
 
-    counterpartyd --backend-rpc-connect=$DOGECOIND_PORT_22555_TCP_ADDR --backend-rpc-port=$DOGECOIND_PORT_22555_TCP_PORT --blockchain-service-connect=$(echo $INSIGHT_PORT_3000_TCP|sed -e "s/tcp/http/") --verbose server
+    counterpartyd --backend-rpc-connect=dogecoind --backend-rpc-port=22555 --blockchain-service-connect=http://insight:3000 --verbose server
 
 
 ## Debug
