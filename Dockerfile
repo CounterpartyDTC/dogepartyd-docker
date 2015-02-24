@@ -14,10 +14,10 @@ USER dogeparty
 ENV HOME /dogeparty
 
 WORKDIR /dogeparty
-RUN git clone https://github.com/CounterpartyXCP/counterpartyd_build
+RUN git clone https://github.com/Dogeparty/federatednode_build.git
 RUN mkdir data
 
-WORKDIR /dogeparty/counterpartyd_build
+WORKDIR /dogeparty/federatednode_build
 RUN git clone https://github.com/Dogeparty/dogepartyd.git dist/counterpartyd
 # RUN git checkout develop
 
@@ -31,4 +31,8 @@ RUN sudo chown -R dogeparty:dogeparty .config
 VOLUME /dogeparty/data
 
 EXPOSE 4000
+
+
+
+# vim: syn=ruby
 
