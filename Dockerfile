@@ -32,7 +32,3 @@ VOLUME /dogeparty/data
 
 EXPOSE 4000
 
-
-
-# vim: syn=ruby
-
